@@ -1,0 +1,45 @@
+/* covers most test cases */
+body{
+  background: #fff;
+  font-family: "SourceSansPro";
+}
+h1,h2,h3,h4,p{
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+h1{
+  color: #000;
+  font-weight: 100;
+  font-size: 32px;
+}
+.bold{
+  font-weight: 700;
+}
+.success{
+  color: #43d48e !important;
+}
+.error{
+  color: #d44343 !important;
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+#topbar{
+  height: 50px;
+  background: #eaecee;
+  width: 100%;
+}
+.nav-tabs>li{
+  font-size: 1em;
+  font-weight: 600;
+  background: #fff;
+  width: 200px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
