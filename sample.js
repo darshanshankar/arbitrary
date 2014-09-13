@@ -3,6 +3,12 @@
   Includes fake jQuery-style code for testing.
 */
 
+$(document).ready(function(){
+  $(this).remove();
+  $("#id").show();
+  $('.class').hide();
+});
+
 var RTCPeerConnection = null;
 var getUserMedia = null;
 var attachMediaStream = null;
