@@ -15,7 +15,7 @@
 
 static File *instance = nil;
 
-+ (File *)getInstance
++ (File *)getInstance:(id)fake
 {
     @synchronized(self){
         if(instance == nil){
