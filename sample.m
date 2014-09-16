@@ -15,7 +15,7 @@
 
 static File *instance = nil;
 
-+ (File *)getInstance:(id)fake
++ (File *)getInstance:(id)fake andAwesome:(int)awesome withFoo:(int)bar
 {
     @synchronized(self){
         if(instance == nil){
@@ -26,6 +26,8 @@ static File *instance = nil;
             instance.theme = @"okaida";
             instance.tabIndent = YES;
             instance.tabSpaces = 4;
+
+            NSString *awesome = @"awesome";
             
         }
     }
