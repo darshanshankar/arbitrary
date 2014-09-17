@@ -1,31 +1,36 @@
 //
-//  File.m
+//  Objective C Test File
+//
+//  Sample.m
 //  Binary
 //
 //  Created by Darshan Shankar on 9/5/14.
 //  Copyright (c) 2014 Darshan Shankar. All rights reserved.
 //
 
-#import "File.h"
+#import "Sample.h"
 
-@implementation File
+@implementation Sample
 @synthesize filename;
 @synthesize extension;
 @synthesize language;
 
-static File *instance = nil;
+static Sample *instance = nil;
 
-+ (File *)getInstance:(id)fake andAwesome:(int)awesome withFoo:(int)bar
++ (Sample *)getInstance:(id)fake andAwesome:(int)awesome withFoo:(int)bar
 {
     @synchronized(self){
         if(instance == nil){
-            instance = [File new];
+            instance = [Sample new];
             instance.filename = @"/sample";
             instance.extension = @"css";
             instance.language = @"css";
             instance.theme = @"okaida";
             instance.tabIndent = YES;
             instance.tabSpaces = 4;
+
+            [self getInstance:4];
+            [self getInstance:4 andAwesome:4 withFoo:4];
 
             NSString *awesome = @"awesome";
             
